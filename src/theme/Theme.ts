@@ -15,5 +15,11 @@ export interface Theme {
     '--blue': string,
     '--blue-dark': string,
     '--blue-twitter': string,
+    '--accent': string,
+    '--accent-soft': string,
+    '--accent-gold': string,
+    '--accent-mint': string,
+    '--card-border': string,
+    '--shadow-color': string,
     'background': string,
 }

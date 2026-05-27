@@ -10,8 +10,10 @@
     width: 100%;
     height: 5rem;
 
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
-    background-color: var(--card-color);
+    border-top: 1px solid var(--card-border);
+    box-shadow: 0 -12px 28px -26px var(--accent);
+    background:
+        linear-gradient(90deg, var(--card-color), var(--accent-soft), var(--card-color));
 }
 
 .footer-logo{
@@ -32,11 +34,16 @@
 }
 
 .footer-icon {
-    color: red;
+    color: var(--accent);
     font: 500 1.25rem 'Inter', sans-serif;
 }
 
 .footer-note {
-    font: 500 1rem 'Inter', sans-serif;
-    color: var(--text);
+    padding: 0.45rem 1rem;
+    border: 1px solid var(--card-border);
+    border-radius: 999px;
+    background: var(--card-color);
+    box-shadow: 0 10px 22px -20px var(--accent);
+    font: 700 0.88rem 'Inter', sans-serif;
+    color: var(--title);
 }

@@ -26,6 +26,14 @@ body {
     color: var(--text);
 }
 
+.theme-container {
+    min-height: 100vh;
+    background:
+        linear-gradient(115deg, rgba(255, 255, 255, 0.72), rgba(255, 228, 242, 0.88) 42%, rgba(167, 239, 215, 0.24)),
+        repeating-linear-gradient(135deg, transparent 0 18px, rgba(255, 126, 189, 0.07) 18px 19px),
+        var(--background);
+}
+
 @media(max-width: 1080px) {
     html {
         font-size: 93.75%;
@@ -53,6 +61,12 @@ h4 {
     color: var(--text);
 }
 
+h1,
+h2,
+h3 {
+    color: var(--title);
+}
+
 button {
     cursor: pointer;
 }
@@ -71,4 +85,20 @@ a {
     flex-direction: column;
     position: relative;
     overflow: auto;
+}
+
+.container::before {
+    content: "Unicorn Match Garden";
+    align-self: center;
+    margin-bottom: 1.4rem;
+    padding: 0.45rem 1.1rem;
+    border: 1px solid var(--card-border);
+    border-radius: 999px;
+    color: var(--title);
+    background: var(--card-color);
+    box-shadow: 0 10px 24px var(--shadow-color);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
 }

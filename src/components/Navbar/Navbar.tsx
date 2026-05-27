@@ -11,7 +11,7 @@ export function Navbar() {
             <div className="navbar-logo-container">
                 <Link className="navbar-logo" to="/">
                     <LoLLogoSVG className="navbar-icon-img"/>
-                    <h2 className="navbar-icon">Esports Live</h2>
+                    <h2 className="navbar-icon">Unicorn Esports Live</h2>
                 </Link>
             </div>
             <div className="settings-container">
