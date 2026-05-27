@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.90b1066b.css",
-    "main.js": "/static/js/main.9d0d88f7.js",
+    "main.css": "/static/css/main.fb5e1bc2.css",
+    "main.js": "/static/js/main.9ba6486d.js",
     "static/js/885.5f33b09a.chunk.js": "/static/js/885.5f33b09a.chunk.js",
     "static/media/red_inhibitor_destroyed.ogg": "/static/media/red_inhibitor_destroyed.7e539066efdb6bc72998.ogg",
     "static/media/blue_inhibitor_destroyed.ogg": "/static/media/blue_inhibitor_destroyed.1dca9d1aeffd48c38a20.ogg",
@@ -29,12 +29,12 @@
     "static/media/inhibitor.svg": "/static/media/inhibitor.5e389683105d41ff0b3db6898525355b.svg",
     "static/media/kill.svg": "/static/media/kill.b4d6f4d2e3d6a470688ed7ca46281132.svg",
     "static/media/dragon-mountain.svg": "/static/media/dragon-mountain.69282d8cc05cb4656bb7809ed548df72.svg",
-    "main.90b1066b.css.map": "/static/css/main.90b1066b.css.map",
-    "main.9d0d88f7.js.map": "/static/js/main.9d0d88f7.js.map",
+    "main.fb5e1bc2.css.map": "/static/css/main.fb5e1bc2.css.map",
+    "main.9ba6486d.js.map": "/static/js/main.9ba6486d.js.map",
     "885.5f33b09a.chunk.js.map": "/static/js/885.5f33b09a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90b1066b.css",
-    "static/js/main.9d0d88f7.js"
+    "static/css/main.fb5e1bc2.css",
+    "static/js/main.9ba6486d.js"
   ]
 }
