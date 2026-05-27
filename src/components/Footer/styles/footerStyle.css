@@ -46,4 +46,14 @@
     box-shadow: 0 10px 22px -20px var(--accent);
     font: 700 0.88rem 'Inter', sans-serif;
     color: var(--title);
+    text-align: center;
+}
+
+.footer-note::after {
+    content: var(--bg-credit);
+    display: block;
+    margin-top: 0.12rem;
+    color: var(--text);
+    font-size: 0.65rem;
+    font-weight: 600;
 }

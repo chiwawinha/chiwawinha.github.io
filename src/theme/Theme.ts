@@ -21,5 +21,8 @@ export interface Theme {
     '--accent-mint': string,
     '--card-border': string,
     '--shadow-color': string,
+    '--mode-eyebrow': string,
+    '--mode-subtitle': string,
+    '--bg-credit': string,
     'background': string,
 }

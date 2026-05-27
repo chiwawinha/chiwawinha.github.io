@@ -1,41 +1,42 @@
-import {useEffect, useState} from "react";
+import { useEffect } from "react";
 import './styles/navbarStyle.css'
 
-import { useTheme } from "../../theme/ThemeContext";
+import { ThemeType, useTheme } from "../../theme/ThemeContext";
+
+const themeOptions: Array<{ label: string, value: ThemeType }> = [
+    { label: "Unicorn", value: "unicorn" },
+    { label: "Saber", value: "saber" },
+];
 
 export function ThemeToggler() {
-    const { setCurrentTheme} = useTheme();
-    const [toggled, setToggled] = useState(true);
+    const { setCurrentTheme, themeType } = useTheme();
 
     useEffect(() => {
         const themeData = localStorage.getItem("theme");
-        if(themeData) {
-            if (themeData === "light") {
-                setCurrentTheme("light");
-                setToggled(false);
-            } else {
-                setCurrentTheme("dark");
-                setToggled(true)
-            }
+        if (themeData === "saber" || themeData === "unicorn") {
+            setCurrentTheme(themeData);
         }
     }, [setCurrentTheme])
 
-    const handleClick = () => {
-        if(toggled) {
-            setCurrentTheme("light");
-            localStorage.setItem("theme", "light");
-        }else{
-            setCurrentTheme("dark");
-            localStorage.setItem("theme", "dark");
-        }
-
-        setToggled((s) => !s);
+    const handleClick = (nextTheme: ThemeType) => {
+        setCurrentTheme(nextTheme);
+        localStorage.setItem("theme", nextTheme);
     }
 
     return (
         <div className="toggle-container">
-            <div onClick={handleClick} className={`theme-toggle${toggled ? " dark" : ""}`}>
-                <div className="notch">🌙</div>
+            <div className="theme-mode-switch" aria-label="Theme mode">
+                {themeOptions.map(option => (
+                    <button
+                        aria-pressed={themeType === option.value}
+                        className={`theme-mode-button${themeType === option.value ? " selected" : ""}`}
+                        key={option.value}
+                        onClick={() => handleClick(option.value)}
+                        type="button"
+                    >
+                        {option.label}
+                    </button>
+                ))}
             </div>
         </div>
     );

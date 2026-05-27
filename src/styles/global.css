@@ -28,10 +28,9 @@ body {
 
 .theme-container {
     min-height: 100vh;
-    background:
-        linear-gradient(115deg, rgba(255, 255, 255, 0.72), rgba(255, 228, 242, 0.88) 42%, rgba(167, 239, 215, 0.24)),
-        repeating-linear-gradient(135deg, transparent 0 18px, rgba(255, 126, 189, 0.07) 18px 19px),
-        var(--background);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 @media(max-width: 1080px) {
@@ -88,7 +87,7 @@ a {
 }
 
 .container::before {
-    content: "Unicorn Match Garden";
+    content: var(--mode-eyebrow);
     align-self: center;
     margin-bottom: 1.4rem;
     padding: 0.45rem 1.1rem;
