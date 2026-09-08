@@ -1,0 +1,2 @@
+import{d as e}from"./index-dnwM9Prk.js";var t=e(`circle-slash-2`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`M22 2 2 22`,key:`y4kqgn`}]]);export{t};
+//# sourceMappingURL=circle-slash-2-c3fP3ZGw.js.map
