@@ -1,0 +1,1 @@
+import{l as e}from"./index-DwFUMMas.js";var t=e(`circle-slash-2`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`M22 2 2 22`,key:`y4kqgn`}]]);export{t};
